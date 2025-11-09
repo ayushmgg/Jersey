@@ -1,0 +1,73 @@
+.jersey-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border-color);
+}
+
+.jersey-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.jersey-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: var(--bg-tertiary);
+}
+
+.jersey-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jersey-info {
+  padding: 1rem;
+}
+
+.jersey-team {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.jersey-player {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.jersey-category {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.jersey-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-top: 0.5rem;
+}
+
+.recommendation-badge {
+  display: inline-block;
+  background-color: var(--success-text);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+

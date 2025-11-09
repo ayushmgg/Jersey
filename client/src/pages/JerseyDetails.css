@@ -1,0 +1,147 @@
+.jersey-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+  border: 1px solid var(--border-color);
+}
+
+.back-button:hover {
+  background: var(--bg-secondary);
+}
+
+.jersey-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.jersey-image-large {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--bg-tertiary);
+}
+
+.jersey-image-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jersey-info-large h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.jersey-info-large h2 {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.category {
+  font-size: 1rem;
+  color: var(--text-tertiary);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin: 1.5rem 0;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-cart,
+.btn-purchase {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-cart {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-cart:hover {
+  background-color: var(--bg-secondary);
+}
+
+.btn-purchase {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-purchase:hover {
+  background-color: var(--accent-hover);
+}
+
+.stock-info {
+  margin-top: 1rem;
+}
+
+.in-stock {
+  color: var(--success-text);
+  font-weight: 500;
+}
+
+.out-of-stock {
+  color: var(--error-text);
+  font-weight: 500;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--error-text);
+}
+
+@media (max-width: 768px) {
+  .jersey-details {
+    grid-template-columns: 1fr;
+  }
+}
+

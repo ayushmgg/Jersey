@@ -1,0 +1,16 @@
+{
+  "name": "jersey-recommendation-system",
+  "version": "1.0.0",
+  "description": "Complete MERN stack jersey recommendation system with ML",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev:ml": "cd ml-service && python app.py",
+    "seed": "cd server && node scripts/seed.js"
+  },
+  "keywords": ["mern", "recommendation", "ml", "react", "node"],
+  "author": "",
+  "license": "ISC"
+}
+
